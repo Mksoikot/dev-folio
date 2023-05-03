@@ -9,7 +9,8 @@ class UserRepository{
     // public User $user = new User();
 
     public function insert(UserDTO $userDTO){
-        return User::insert($userDTO->toArray());
+
+        return User::insert($userDTO->toArray()); 
     }
 }
 
